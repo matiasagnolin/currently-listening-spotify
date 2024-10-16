@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service
 import se.michaelthelin.spotify.model_objects.miscellaneous.CurrentlyPlaying
 
 @Service
-class GetCurrentPlayingSong(
+class GetCurrentPlayingSongSpotify(
     private val spotifyApiClient: SpotifyApiClient
 ) {
     fun execute(user: User): CurrentlyPlaying? {
